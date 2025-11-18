@@ -1,75 +1,61 @@
-body { background: #ffe9f0;}
-{box-sizing: border-box; }
-html, body {margin: 0; padding: 0; }
+​/* Reset and setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base page styling */
 body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-color: #222;
-background: #f8f9fa;
-max-width: 72ch;
-margin: 0 auto;
-padding: 1rem;
+  font-family: system-ui, sans-serif;
+  background: #0b0e14;
+  color: #e6edf3;
 }
-@media (min-width: 700px)
-{
-body {padding: 2rem; }
-form {max-width: 600px; }
+
+/* Color and design variables */
+:root {
+  --primary: #4f9cff;  /* Accent blue color */
+  --text: #e6edf3;     /* Light text color */
 }
-/* Reset and setup */
-*, *::before, *::after
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body
-{
-font-family: system-ui, sans-serif;
-background: #0b0e14;
-color: #e6edf3;
-}
-:root
-{
---primary: #4f9cff; /* Accent blue color */
---text: #e6edf3; /* Light text color */
-}
+
 /* Header layout */
-.site-header
-{
-display: flex;
-justify-content: space-between;
-align-items: center;
-background: #111624;
-padding: 0.75rem 1rem;
-position: sticky;
-top: 0;
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111624;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
 }
+
 /* Logo styling */
-.logo
-{
-color: var(--text);
-text-decoration: none;
-font-weight: bold;
+.logo {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
 }
+
 /* Navigation links */
-.site-nav ul
-{
-list-style: none;
-display: flex;
-gap: 1rem;
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
-.site-nav a
-{
-text-decoration: none;
-color: var(--text);
-padding: 0.5rem 0.75rem;
-border-radius: 8px;
-transition: background 0.3s;
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
+
 /* Hover and active link styles */
 .site-nav a:hover,
-.site-nav a.active
-{
-background: var(--primary);
-color: #000;
+.site-nav a.active {
+  background: var(--primary);
+  color: #000;
 }
+Sent from my Verizon, Samsung Galaxy smartphone
+Get Outlook for Android
